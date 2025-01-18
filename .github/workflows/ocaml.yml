@@ -1,0 +1,18 @@
+on: [push]
+name: Shangshield.ml CI
+permissions: read-all
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install OCaml.
+        uses: ocaml/setup-ocaml@v3
+        with:
+          ocaml-compiler: 5
+
+      - name: "Install dependencies."
+        run: opam install . --deps-only --with-test
+          
+      - name: "Run unit tests."
+        run: opam exec -- dune runtest
