@@ -1,5 +1,7 @@
 # SHANGSHIELD.ML :dragon: :camel:
 
+![GitHub CI](https://github.com/alyxshang/shangshield.ml/actions/workflows/ocaml.yml/badge.svg)
+
 ***An OCaml package to measure the security of passwords. :dragon: :camel:***
 
 ## ABOUT :books:
