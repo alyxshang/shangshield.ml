@@ -4,13 +4,6 @@
 *)
 
 (**
-* Subtracts two numbers from each other regardless of which 
-* one of the two is larger than the other. 
-*)
-let digit_distance (a: int) (b: int) : int =
-    if a < b then b - a else a - b
-
-(**
 * Attempts to match a character against 
 * a digit and returns the matching integer. 
 * If a non-digit character is supplied, 0 

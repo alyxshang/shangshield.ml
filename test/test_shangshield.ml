@@ -17,14 +17,6 @@ open Shangshield
 
 (**
 * The function to test the 
-* "digit_distance" function. 
-*)
-let test_digit_distance _ = 
-    let distance = digit_distance 4 3 in
-    assert_equal 1 distance
-
-(**
-* The function to test the 
 * "char_as_digit" function. 
 *)
 let test_char_as_digit _ =
@@ -93,7 +85,6 @@ let suite =
       "test_letter_pos" >:: test_letter_pos;
       "test_char_as_digit" >:: test_char_as_digit;
       "test_security_score" >:: test_security_score;
-      "test_digit_distance" >:: test_digit_distance;
       "test_reduce_chars_to_number" >:: test_reduce_chars_to_number;
     ]
 
