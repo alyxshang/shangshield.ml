@@ -38,7 +38,7 @@ After these commands have been executed, you must also add the expression `shang
 
 ### API Documentation
 
-To view this package's API, first run the command `opam install .` from this repository's root and follow that command with the command `dune build @doc`. After you have executed these commands, you can open the generated documentation located at the path `_build/default/_doc/_html/index.html` using your browser.
+To generate this package's API documentation, please run the commands `opam install .` and `dune build @doc` from this repository's root. The generated documentation will be in the directory `_build/default/_doc/_html/` inside the repository's root.
 
 ### Unit tests
 
